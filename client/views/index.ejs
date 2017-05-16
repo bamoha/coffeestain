@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<title>Coffee|Stain</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<link rel="shortcut icon" href="images/favicon.ico">
+    
+	<!-- CSS -->
+	<link href="stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="stylesheets/flexslider.css" rel="stylesheet" type="text/css" />
+	<link href="stylesheets/prettyPhoto.css" rel="stylesheet" type="text/css" />
+	<link href="stylesheets/animate.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="stylesheets/owl.carousel.css" rel="stylesheet">
+	<link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
+    
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,700,500,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">	
+    
+	<!-- SCRIPTS -->
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if IE]><html class="ie" lang="en"> <![endif]-->
+	
+	
+	<script>
+		
+		//PrettyPhoto
+		jQuery(document).ready(function() {
+			$("a[rel^='prettyPhoto']").prettyPhoto();
+		});
+		
+		//BlackAndWhite
+		$(window).load(function(){
+			$('.client_img').BlackAndWhite({
+				hoverEffect : true, // default true
+				// set the path to BnWWorker.js for a superfast implementation
+				webworkerPath : false,
+				// for the images with a fluid width and height 
+				responsive:true,
+				// to invert the hover effect
+				invertHoverEffect: false,
+				// this option works only on the modern browsers ( on IE lower than 9 it remains always 1)
+				intensity:1,
+				speed: { //this property could also be just speed: value for both fadeIn and fadeOut
+					fadeIn: 300, // 200ms for fadeIn animations
+					fadeOut: 300 // 800ms for fadeOut animations
+				},
+				onImageReady:function(img) {
+					// this callback gets executed anytime an image is converted
+				}
+			});
+		});
+		
+	</script>
+	
+</head>
+<body>
+
+<!-- PRELOADER -->
+
+
+	<!-- PAGE -->
+	<div id="page">
+	
+		<!-- HEADER -->
+		<header>
+			
+			<!-- MENU BLOCK -->
+			<div class="menu_block">
+			
+				<!-- CONTAINER -->
+				<div class="container clearfix">
+					
+					<!-- LOGO -->
+					<div class="logo pull-left">
+						<a href="/" ><span class="b1">Coffee<span class="b3">Stain</a>
+					</div>
+					<!-- MENU -->
+					<div class="pull-right">
+						<nav class="navmenu center">
+							<ul>
+								<li class="first active scroll_btn"><a href="#home" >Home</a></li>
+								<li class="scroll_btn"><a href="#about" >About Us</a></li>
+								<li class="scroll_btn"><a href="#test" >Test</a></li>
+								<li class="scroll_btn"><a href="#team" >Team</a></li>
+								<li class="sub-menu">
+									<a href="javascript:void(0);" >Contacts</a>
+									<ul>
+										<li><a href="/contact" >Join Our Tutorial</a></li>
+										<li><a href="#contact" >Contact Organisers</a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div><!-- //MENU -->
+				</div><!-- //MENU BLOCK -->
+			</div><!-- //CONTAINER -->
+		</header><!-- //HEADER -->
+  
+
+		
+		
+		<!-- HOME -->
+		<section id="home" class="padbot0">
+				
+			<!-- TOP SLIDER -->
+			<div class="flexslider top_slider">
+				<ul class="slides">
+					<li class="slide1">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay2 FromTop">We teach you, </p>
+							<p class="title2 captionDelay4 FromTop">Help you</p>
+							<p class="title4 captionDelay7 FromBottom">Make you better off in java programming</p>
+						</div>
+						<a class="slide_btn FromRight" href="#about" >Read More</a>
+					<li class="slide2">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay6 FromLeft">Come!, </p>
+							<p class="title2 captionDelay4 FromLeft">Bring a friend</p>
+							<p class="title4 captionDelay7 FromLeft">And try us out.</p>
+						</div>
+						<a class="slide_btn FromRight" href="#about" >Read More</a>
+					</li>
+					<li class="slide3">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay1 FromBottom">Take a test online,</p>
+							<p class="title2 captionDelay2 FromBottom">Feel what it is to code</p>
+							<p class="title4 captionDelay5 FromBottom">answer our quizes online, some are even past questions</p>
+						</div>
+						<a class="slide_btn FromRight" href="#about" >Read More</a>
+						
+					</li>
+				</ul>
+			</div>
+			<div id="carousel">
+				<ul class="slides">
+					<li><img src="images/slider/slide1_bg.jpg" alt="" /></li>
+					<li><img src="images/slider/slide2_bg.jpg" alt="" /></li>
+					<li><img src="images/slider/slide3_bg.jpg" alt="" /></li>
+				</ul>
+			</div><!-- //TOP SLIDER -->
+		</section><!-- //HOME -->
+		
+		
+		<!-- ABOUT -->
+		<section id="about">
+			<!-- CLEAN CODE -->
+			<div class="cleancode_block">
+				
+				<!-- CONTAINER -->
+				<div class="container" data-appear-top-offset="-200" data-animated="fadeInUp">
+					
+					<!-- CASTOM TAB -->
+					<div id="myTabContent" class="tab-content">
+						<div class="tab-pane fade in active clearfix" id="tab2">
+							<p class="title"><b>Support</b></p>
+							<span>The course is not just for CSC students, its for anyone who is intrested in java programming.</span>
+						</div>
+						<div class="tab-pane fade clearfix" id="tab3">
+							<p class="title"><b>Tests</b></p>
+							<span>We do so many tests that you get familiar with the questions</span>
+						</div>
+						<div class="tab-pane fade clearfix" id="tab4">
+							<p class="title"><b>Materials</b></p>
+							<span>We Have soo many materials to give out so as to prepare hard and well for CSC test and exams.</span>
+						</div>
+						<div class="tab-pane fade clearfix" id="tab5">
+							<p class="title"><b>Quality</b></p>
+							<span>We have high quality lecturers that have high experience in many aspects of programming.</span>
+						</div>
+					</div>
+					<ul id="myTab" class="nav nav-tabs">
+						<li><a class="active" class="i2" href="#tab2" data-toggle="tab" ><i></i><span>Support</span></a></li>
+						<li><a class="i3" href="#tab3" data-toggle="tab" ><i></i><span>Tests</span></a></li>
+						<li><a class="i4" href="#tab4" data-toggle="tab" ><i></i><span>Materials</span></a></li>
+						<li><a class="i5" href="#tab5" data-toggle="tab" ><i></i><span>Quality</span></a></li>
+					</ul><!-- CASTOM TAB -->
+				</div><!-- //CONTAINER -->
+			</div><!-- //CLEAN CODE -->
+		</section><!-- //ABOUT -->
+
+
+		<section id="test">
+
+			<div class="purpose_block">
+				
+				<!-- CONTAINER -->
+				<div class="container">
+					
+					<!-- ROW -->
+					<div class="row">
+					
+						<div class="col-lg-7 col-md-7 col-sm-7" data-appear-top-offset="-200" data-animated="fadeInLeft">
+							<h2><b>Multi-purpose</b> Java Test</h2>
+							<p>We Give have online platforms and android apps that we use to give out tests to people.</p>
+							<p>You can deside to download our apps or take an online test</p>
+							<a class="btn btn-active" href="javascript:void(0);" ><span data-hover="Yes I want it">Download the app</span></a>
+							<a class="btn" href="javascript:void(0);" >Take the online test</a>
+						</div>
+						
+						<div class="col-lg-5 col-md-5 col-sm-5 ipad_img_in" data-appear-top-offset="-200" data-animated="fadeInRight">
+							<img class="ipad_img1" src="images/img1.png" alt="" />
+						</div>
+					</div><!-- //ROW -->
+				</div><!-- //CONTAINER -->
+			</div><!-- //MULTI PURPOSE -->
+			
+		</section>
+		
+		
+		<!-- TEAM -->
+		<section id="team">
+		
+			<!-- CONTAINER -->
+			<div class="container">
+				<h2><b>Our</b> Team</h2>
+				
+				<!-- ROW -->
+				<div class="row" data-appear-top-offset="-200" data-animated="fadeInUp">
+						
+					<!-- TEAM SLIDER -->
+					<div class="owl-demo owl-carousel team_slider">
+						
+						<!-- crewman5 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/5.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Flow</p>
+										<span>Tutor</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="javascript:void(0);" ><i class="fa fa-google-plus"></i></a>
+									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
+									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman5 -->
+						
+						<!-- crewman6 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/6.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Hamza Bashir</p>
+										<span>Coordinator</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
+									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman6 -->
+						
+						<!-- crewman7 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/7.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Femi Adegoke</p>
+										<span>Developer</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
+									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman7 -->
+						
+						<!-- crewman8 -->
+						<div class="item">
+							<div class="crewman_item">
+								<div class="crewman">
+									<img src="images/team/8.jpg" alt="" />
+								</div>
+								<div class="crewman_descr center">
+									<div class="crewman_descr_cont">
+										<p>Taslim Oseni</p>
+										<span>Developer</span>
+									</div>
+								</div>
+								<div class="crewman_social">
+									<a href="javascript:void(0);" ><i class="fa fa-google-plus"></i></a>
+									<a href="javascript:void(0);" ><i class="fa fa-twitter"></i></a>
+									<a href="javascript:void(0);" ><i class="fa fa-facebook-square"></i></a>
+								</div>
+							</div>
+						</div><!-- crewman8 -->
+					</div><!-- TEAM SLIDER -->
+				</div><!-- //ROW -->
+			</div><!-- //CONTAINER -->
+		</section><!-- //TEAM -->
+
+		<footer id="contact">
+		        <div class="row">
+		            <div class="col-lg-8 col-lg-offset-2">
+		                <h2>Contact The Organisers</h2>
+		                <p>Send us a mail</p>
+		                <p><a href="mailto:feedback@startbootstrap.com">Bashirhamza05@gmail.com</a>
+		                </p>
+		                <ul class="list-inline banner-social-buttons">
+		                    <li>
+		                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+		                    </li>
+		                    <li>
+		                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+		                    </li>
+		                    <li>
+		                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-facebook-square fa-fw"></i> <span class="network-name">facebook</span></a>
+		                    </li>
+		                </ul>
+		            </div>
+		        </div>
+		</footer>
+
+
+
+	<script src="javascripts/jquery.min.js" type="text/javascript"></script>
+	<script src="javascripts/bootstrap.min.js" type="text/javascript"></script>
+	<script src="javascripts/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<script src="javascripts/jquery.nicescroll.min.js" type="text/javascript"></script>
+	<script src="javascripts/superfish.min.js" type="text/javascript"></script>
+	<script src="javascripts/jquery.flexslider-min.js" type="text/javascript"></script>
+	<script src="javascripts/owl.carousel.js" type="text/javascript"></script>
+	<script src="javascripts/animate.js" type="text/javascript"></script>
+	<script src="javascripts/jquery.BlackAndWhite.js"></script>
+	<script src="javascripts/myscript.js" type="text/javascript"></script>
+
+</div>
+</body>
+</html>
